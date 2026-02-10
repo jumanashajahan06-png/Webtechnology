@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EasyBuy E-Commerce</title>
+</head>
+
+<body>
+
+
+<header align="center">
+    <h1 style="color: darkblue;">EasyBuy</h1>
+    <p style="color: green;">Your simple online shopping website</p>
+</header>
+
+<hr>
+
+
+<nav align="center">
+    <a href="#home" style="color: brown;">Home</a> |
+    <a href="#products" style="color: brown;">Products</a> |
+    <a href="#offers" style="color: brown;">Offers</a> |
+    <a href="#contact" style="color: brown;">Contact</a>
+</nav>
+
+<hr>
+
+<main>
+
+
+<section id="home">
+    <h2 style="color: darkred;">Welcome to EasyBuy</h2>
+    <p style="color: black;">
+        EasyBuy is a beginner-friendly static e-commerce website.
+    </p>
+</section>
+
+<hr>
+
+
+<section id="products">
+    <h2 style="color: darkred;">Our Products</h2>
+
+    
+    <article>
+        <h3 style="color: navy;">Smartphone</h3>
+
+        <figure>
+            <img src="mobile.png" alt="Smartphone" width="150">
+            <figcaption style="color: gray;">Latest Android Smartphone</figcaption>
+        </figure>
+
+        <p style="color: green;">Price: ₹15,000</p>
+
+        <label>
+            <input type="checkbox"> Add to Cart
+        </label>
+    </article>
+
+    <br><hr>
+
+    
+    <article>
+        <h3 style="color: navy;">Laptop</h3>
+
+        <figure>
+            <img src="laptop.png" alt="Laptop image" width="150">
+            <figcaption style="color: gray;">High performance laptop</figcaption>
+        </figure>
+
+        <p style="color: green;">Price: ₹50,000</p>
+
+        <label>
+            <input type="checkbox"> Add to Cart
+        </label>
+    </article>
+
+    <br><hr>
+
+    
+    <article>
+        <h3 style="color: navy;">Headphones</h3>
+
+        <figure>
+            <img src="headphones.png" alt="Headphones" width="150">
+            <figcaption style="color: gray;">Wireless headphones</figcaption>
+        </figure>
+
+        <p style="color: green;">Price: ₹2,000</p>
+
+        <label>
+            <input type="checkbox"> Add to Cart
+        </label>
+    </article>
+
+</section>
+
+<hr>
+
+
+<section id="offers">
+    <h2 style="color: darkred;">Special Offers</h2>
+
+    <details>
+        <summary style="color: purple;">Click to view current offers</summary>
+        <p style="color: darkgreen;">✔ 20% off on Smartphones</p>
+        <p style="color: darkgreen;">✔ Free delivery on orders above ₹1000</p>
+        <p style="color: darkgreen;">✔ Festival sale available</p>
+    </details>
+</section>
+
+<hr>
+
+
+<section id="contact">
+    <h2 style="color: darkred;">Contact Us</h2>
+
+    <form>
+        <label style="color: black;">Name:</label><br>
+        <input type="text" required><br><br>
+
+        <label style="color: black;">Email:</label><br>
+        <input type="email" required><br><br>
+
+        <label style="color: black;">Product Category:</label><br>
+        <input list="categories">
+        <datalist id="categories">
+            <option value="Smartphones">
+            <option value="Laptops">
+            <option value="Accessories">
+        </datalist><br><br>
+
+        <label style="color: black;">Payment Method:</label><br>
+        <input type="radio" name="payment"> Cash on Delivery<br>
+        <input type="radio" name="payment"> UPI<br>
+        <input type="radio" name="payment"> Card<br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+</main>
+
+<hr>
+
+
+
+</body>
+</html>
