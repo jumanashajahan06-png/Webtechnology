@@ -1,0 +1,15 @@
+p {
+    color: #2c3e50;
+    font-size: 15px;
+}
+
+details {
+    background-color: #e8f6f3;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+img {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}

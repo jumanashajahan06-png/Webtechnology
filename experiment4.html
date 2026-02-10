@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EasyBuy E-Commerce</title>
+
+    <style>
+        /* BODY GRADIENT BACKGROUND */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #dbe6f6, #c5796d);
+        }
+
+        /* HEADER GRADIENT */
+        header {
+            background: linear-gradient(to right, #74ebd5, #9face6);
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #1b2631;
+            margin: 0;
+        }
+
+        header p {
+            color: #154360;
+            font-weight: bold;
+        }
+
+        /* NAVBAR GRADIENT */
+        nav {
+            background: linear-gradient(to right, #141e30, #243b55);
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #f9e79f;
+            text-decoration: underline;
+        }
+
+        /* SECTIONS */
+        section {
+            background-color: white;
+            margin: 25px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        /* PRODUCT CARDS */
+        article {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        article:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 15px gray;
+        }
+
+        img {
+            border-radius: 10px;
+            border: 2px solid #ccc;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* ADD TO CART INTERACTION */
+        input[type="checkbox"]:checked + span {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* BUTTON */
+        input[type="submit"] {
+            background: linear-gradient(to right, #11998e, #38ef7d);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background: linear-gradient(to right, #38ef7d, #11998e);
+            cursor: pointer;
+        }
+
+        footer {
+            background: linear-gradient(to right, #232526, #414345);
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>EasyBuy</h1>
+    <p>Your simple online shopping website</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#offers">Offers</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+<section id="home">
+    <h2>Welcome to EasyBuy</h2>
+    <p>
+        EasyBuy is a beginner-friendly static e-commerce website created using HTML and CSS.
+    </p>
+</section>
+
+<section id="products">
+    <h2>Our Products</h2>
+
+    <article>
+        <h3>Smartphone</h3>
+        <img src="mobile.png" width="150"><br><br>
+        <p class="price">₹15,000</p>
+        <label>
+            <input type="checkbox">
+            <span>Add to Cart</span>
+        </label>
+    </article>
+
+    <article>
+        <h3>Laptop</h3>
+        <img src="laptop.png" width="150"><br><br>
+        <p class="price">₹50,000</p>
+        <label>
+            <input type="checkbox">
+            <span>Add to Cart</span>
+        </label>
+    </article>
+
+    <article>
+        <h3>Headphones</h3>
+        <img src="headphones.png" width="150"><br><br>
+        <p class="price">₹2,000</p>
+        <label>
+            <input type="checkbox">
+            <span>Add to Cart</span>
+        </label>
+    </article>
+
+</section>
+
+<section id="offers">
+    <h2>Special Offers</h2>
+    <details>
+        <summary>Click to view offers</summary>
+        <p>✔ 20% off on Smartphones</p>
+        <p>✔ Free delivery above ₹1000</p>
+        <p>✔ Festival sale available</p>
+    </details>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        Name:<br>
+        <input type="text" required><br><br>
+        Email:<br>
+        <input type="email" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+</main>
+
+<footer>
+    © 2026 EasyBuy | HTML + CSS Project
+</footer>
+
+</body>
+</html>
