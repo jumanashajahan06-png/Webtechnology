@@ -1,121 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>EasyBuy E-Commerce</title>
 
+    
+    <link rel="stylesheet" href="style2.css">
+
+    
     <style>
-      
+
+        
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #dbe6f6, #c5796d);
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
         }
-
-        /* HEADER GRADIENT */
+        
+        
         header {
-            background: linear-gradient(to right, #74ebd5, #9face6);
-            padding: 25px;
+            background: linear-gradient(to right, #1f1c2c, #928dab);
             text-align: center;
+            padding: 35px 20px;
         }
-
+        
         header h1 {
-            color: #1b2631;
             margin: 0;
+            font-size: 42px;
+            letter-spacing: 1px;
         }
-
+        
         header p {
-            color: #154360;
-            font-weight: bold;
+            margin-top: 8px;
+            font-size: 17px;
+            color: #e0e0e0;
         }
-
-        /* NAVBAR GRADIENT */
+        
+        
         nav {
-            background: linear-gradient(to right, #141e30, #243b55);
-            padding: 12px;
+            background: #111827;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav a {
+            color: #ffffff;
+            margin: 0 18px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 17px;
+            transition: 0.3s;
+        }
+        
+        nav a:hover {
+            color: #00f2fe;
+        }
+        
+        
+        section {
+            padding: 50px 10%;
+        }
+        
+    
+        #home {
             text-align: center;
         }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 15px;
+        
+        
+        #products {
+            background: rgba(255,255,255,0.03);
+            border-radius: 25px;
+        }
+        
+        
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        
+        .card {
+            background: #1f2937;
+            padding: 25px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            transition: 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.7);
+        }
+        
+        
+        .img-box {
+            height: 170px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .product-img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
+        
+        
+        .price {
+            color: #00ffae;
             font-weight: bold;
             font-size: 18px;
         }
-
-        nav a:hover {
-            color: #f9e79f;
-            text-decoration: underline;
-        }
-
         
-        section {
-            background-color: white;
-            margin: 25px;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
-        }
-
-        article {
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 12px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        article:hover {
-            transform: scale(1.03);
-            box-shadow: 0 0 15px gray;
-        }
-
-        img {
-            border-radius: 10px;
-            border: 2px solid #ccc;
-        }
-
-        .price {
-            color: green;
-            font-weight: bold;
-        }
-
-       
-        input[type="checkbox"]:checked + span {
-            color: green;
-            font-weight: bold;
-        }
-
         
-        input[type="submit"] {
-            background: linear-gradient(to right, #11998e, #38ef7d);
-            color: white;
+        button {
             padding: 10px 20px;
             border: none;
-            border-radius: 6px;
-            font-size: 16px;
-        }
-
-        input[type="submit"]:hover {
-            background: linear-gradient(to right, #38ef7d, #11998e);
+            border-radius: 30px;
+            background: linear-gradient(to right, #00f2fe, #4facfe);
+            color: #000;
+            font-weight: bold;
             cursor: pointer;
+            transition: 0.3s;
         }
-
-        footer {
-            background: linear-gradient(to right, #232526, #414345);
-            color: white;
+        
+        button:hover {
+            transform: scale(1.07);
+        }
+        
+        
+        #offers {
             text-align: center;
-            padding: 12px;
         }
-    </style>
+        
+        details {
+            background: #1f2937;
+            padding: 18px;
+            width: 50%;
+            margin: 30px auto;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+        
+        
+        #contact {
+            background: rgba(255,255,255,0.03);
+            border-radius: 25px;
+        }
+        
+        .contact-box {
+            display: flex;
+            justify-content: center;
+        }
+        
+        form {
+            background: #1f2937;
+            padding: 25px;
+            border-radius: 15px;
+            width: 380px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        input {
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            background: #374151;
+            color: white;
+        }
+        
+        input::placeholder {
+            color: #ccc;
+        }
+        
+        input:focus {
+            outline: 2px solid #00f2fe;
+        }
+        
+        </style>
 </head>
 
-<body>
+<body style="margin:0; font-family: Arial, sans-serif; background: linear-gradient(to right, #e3f2fd, #fce4ec);">
 
-<header>
-    <h1>EasyBuy</h1>
-    <p>Your simple online shopping website</p>
+
+<header style="background: linear-gradient(to right, #667eea, #764ba2); 
+               color: white; 
+               text-align: center; 
+               padding: 50px;">
+    <h1 style="font-size: 45px;">EasyBuy</h1>
+    <p style="font-size: 18px;">Your simple online shopping website</p>
 </header>
 
 <nav>
@@ -127,73 +212,118 @@
 
 <main>
 
-<section id="home">
-    <h2>Welcome to EasyBuy</h2>
-    <p>
-        EasyBuy is a beginner-friendly static e-commerce website created using HTML and CSS.
-    </p>
+<section id="home" style="text-align:center; padding:40px;">
+    <h2 style="color: rgb(163, 32, 32);">Welcome to EasyBuy</h2>
+    <p style="color: #000203;">EasyBuy is a modern and attractive static e-commerce website.</p>
 </section>
 
+
 <section id="products">
-    <h2>Our Products</h2>
+    <h2 style="color: rgb(58, 58, 146);text-align: center;">Our Products</h2>
 
-    <article>
-        <h3>Smartphone</h3>
-        <img src="mobile.png" width="150"><br><br>
-        <p class="price">₹15,000</p>
-        <label>
-            <input type="checkbox">
-            <span>Add to Cart</span>
-        </label>
-    </article>
+    <div class="product-container">
 
-    <article>
-        <h3>Laptop</h3>
-        <img src="laptop.png" width="150"><br><br>
-        <p class="price">₹50,000</p>
-        <label>
-            <input type="checkbox">
-            <span>Add to Cart</span>
-        </label>
-    </article>
+        <article class="card">
+            <div class="img-box">
+                <img src="mobile.png" alt="Smartphone" class="product-img" width="150">
+            </div>
+            <h3>Smartphone</h3>
+            <p>Latest Android Smartphone</p>
+            <p class="price">₹15,000</p>
+            <button>Add to Cart</button>
+        </article>
 
-    <article>
-        <h3>Headphones</h3>
-        <img src="headphones.png" width="150"><br><br>
-        <p class="price">₹2,000</p>
-        <label>
-            <input type="checkbox">
-            <span>Add to Cart</span>
-        </label>
-    </article>
+        <article class="card">
+            <div class="img-box">
+                <img src="laptop.png" alt="Laptop" class="product-img" width="150">
+            </div>
+            <h3>Laptop</h3>
+            <p>High performance laptop</p>
+            <p class="price">₹50,000</p>
+            <button>Add to Cart</button>
+        </article>
 
+        <article class="card">
+            <div class="img-box">
+                <img src="headphones.png" alt="Headphones" class="product-img" width="150">
+            </div>
+            <h3>Headphones</h3>
+            <p>Wireless headphones</p>
+            <p class="price">₹2,000</p>
+            <button>Add to Cart</button>
+        </article>
+
+        <article class="card">
+            <div class="img-box">
+            <img src="smartwatch.png" alt="Smart Watch" class="product-img" width="150">
+            </div>
+            <h3>Smart Watch</h3>
+            <p>Fitness tracking watch</p>
+            <p class="price">₹5,000</p>
+            <button>Add to Cart</button>
+        </article>
+
+        <article class="card">
+            <div class="img-box">
+            <img src="camera.png" alt="Camera" class="product-img" width="150">
+            </div>
+            <h3>Camera</h3>
+            <p>Professional DSLR Camera</p>
+            <p class="price">₹30,000</p>
+            <button>Add to Cart</button>
+        </article>
+
+        <article class="card">
+            <div class="img-box">
+            <img src="gaming.png" alt="Gaming Console" class="product-img" width="150">
+            </div>
+            <h3>Gaming Console</h3>
+            <p>Next-gen gaming console</p>
+            <p class="price">₹40,000</p>
+            <button>Add to Cart</button>
+        </article>
+
+    </div>
 </section>
 
 <section id="offers">
-    <h2>Special Offers</h2>
+    <h2 style="color: purple;">Special Offers</h2>
+
     <details>
-        <summary>Click to view offers</summary>
+        <summary style="font-weight:bold; cursor:pointer;">Click to view current offers</summary>
         <p>✔ 20% off on Smartphones</p>
-        <p>✔ Free delivery above ₹1000</p>
+        <p>✔ Free delivery on orders above ₹1000</p>
         <p>✔ Festival sale available</p>
     </details>
 </section>
 
 <section id="contact">
-    <h2>Contact Us</h2>
-    <form>
-        Name:<br>
-        <input type="text" required><br><br>
-        Email:<br>
-        <input type="email" required><br><br>
-        <input type="submit" value="Submit">
-    </form>
+    <h2 style="color: darkgreen;text-align: center;">Contact Us</h2>
+
+    <div class="contact-box">
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input list="categories" placeholder="Product Category">
+            <datalist id="categories">
+                <option value="Smartphones">
+                <option value="Laptops">
+                <option value="Accessories">
+            </datalist>
+
+            <div>
+                <label><input type="radio" name="payment"> Cash on Delivery</label>
+                <label><input type="radio" name="payment"> UPI</label>
+                <label><input type="radio" name="payment"> Card</label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </section>
 
 </main>
 
 
-
 </body>
 </html>
-
