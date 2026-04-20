@@ -1,19 +1,43 @@
-# EduPulse
+# 📊 EduPulse – Student Productivity & Burnout Monitor
 
-Student performance tracking system built using PHP & MySQL.
-link of my project 
+🔗 **Live Demo:**
 https://jumana.infinityfreeapp.com/edupulse/
 
-## Features
-- User authentication
-- Dashboard
-- Marks & attendance tracking
+---
 
-## Tech Stack
-- PHP
-- MySQL
-- HTML/CSS/JS
+## 📌 About the Project
 
-## Setup
-1. Import database.sql
-2. Run on XAMPP
+EduPulse is a web-based system designed to track student attendance, study habits, and burnout levels. It helps students monitor their academic performance and maintain a healthy study routine.
+
+---
+
+## 🚀 Features
+
+* User Registration & Login
+* Attendance Tracking
+* Study Hours Monitoring
+* Burnout Status Analysis
+* Dashboard Overview
+
+---
+
+## 🛠️ Tech Stack
+
+* PHP
+* MySQL
+* HTML, CSS, JavaScript
+
+---
+
+## ⚙️ Setup Instructions (Local)
+
+1. Install XAMPP
+2. Import `database.sql` into phpMyAdmin
+3. Place project in `htdocs`
+4. Run: http://localhost/edupulse/
+
+---
+
+## 👩‍💻 Author
+
+Jumana Afrin
