@@ -1,12 +1,19 @@
-# 🌐 Web Technology Experiments
+# EduPulse
 
-## 🔗 Live Website
-👉 [Click here to view my website](https://Jumana.infinityfreeapp.com/myproject/)
+Student performance tracking system built using PHP & MySQL.
+link of my project 
+https://jumana.infinityfreeapp.com/edupulse/
 
-## 📂 Project Files
-Contains all experiment HTML and PHP files.
+## Features
+- User authentication
+- Dashboard
+- Marks & attendance tracking
 
-## 💻 Technologies Used
-- HTML
-- CSS
+## Tech Stack
 - PHP
+- MySQL
+- HTML/CSS/JS
+
+## Setup
+1. Import database.sql
+2. Run on XAMPP
